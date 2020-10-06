@@ -24,7 +24,7 @@ public class Controller {
 	
 	@Autowired
 	LoginService loginService;
-	
+	  
 	
 	Logger log=LoggerFactory.getLogger(Controller.class);
 	
@@ -65,7 +65,7 @@ public class Controller {
 	}
 	
 	
-	@HystrixCommand(fallbackMethod="keepTableInSyncFail")
+	@HystrixCommand(fallbackMethod="newUserFail")
 	@PostMapping("/newUser")
 	public User newUser(@RequestBody User user)
 	{
@@ -74,7 +74,7 @@ public class Controller {
 	public User newUserFail(@RequestBody User user)
 	{
 		return null;
-	}
+	} 
 	
 	
 	

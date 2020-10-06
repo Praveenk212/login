@@ -7,5 +7,5 @@ import com.cg.obs.dto.User;
 
 public interface UserRepository extends JpaRepository<User,Integer>
 {
-
+  
 }
