@@ -23,7 +23,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableHystrix
-@EnableHystrixDashboard
+@EnableHystrixDashboard  
 @EnableSwagger2
 @ComponentScan("com.cg.obs")
 public class Login {
